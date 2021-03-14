@@ -15,3 +15,8 @@ import (
   personPath: "\(person)"
 }
  
+#Person: {
+  first_name: string
+  last_name: string
+  age: int 
+}
