@@ -1,0 +1,6 @@
+---
+name: "brian.dev"
+environments:
+  - name: Production
+    url: https://www.brian.dev
+

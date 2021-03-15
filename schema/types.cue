@@ -11,7 +11,8 @@ import (
   TitleName:  strings.ToTitle(name)
   UPPER_NAME: strings.ToUpper(name)
 
-  person:  string // brian (will be resolved to {DATA}/person/brian.yaml)
+  person:  string
+  sites: [string]
   personPath: "\(person)"
 }
  
@@ -19,4 +20,14 @@ import (
   first_name: string
   last_name: string
   age: int 
+}
+
+#Site: {
+  name: string
+  environments: [#Environment]
+}
+
+#Environment: {
+  name: string
+  url: string
 }

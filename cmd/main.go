@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/bketelsen/server"
+	"github.com/kr/pretty"
 	"gopkg.in/yaml.v2"
 )
 
@@ -29,6 +30,5 @@ func main() {
 	if err != nil {
 		log.Fatalf("error: %v", err)
 	}
-	fmt.Println(world.Person.FirstName)
-
+	pretty.Println(world)
 }
